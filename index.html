@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asadbek Saidov | Creative Full Stack Developer</title>
+    <meta name="description"
+        content="Portfolio of Saidov Asadbek, a Full Stack Developer specializing in high-performance web applications and travel ecosystems.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("uxddXtGjJO2fyXYpC");
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="cursor-glow"></div>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">ASADBEK<span>.</span>SAIDOV</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobile-menu">
+                <ul class="mobile-nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <button class="mobile-toggle" id="mobile-toggle">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+
+                    <h1>Transforming Ideas into <span class="gradient-text">Exceptional</span> Digital Realities.</h1>
+                    <p class="description">I am Saidov Asadbek, a versatile Full Stack Developer dedicated to building high-performance, bespoke web applications tailored to any industry and any business challenge.</p>
+                        <div class="hero-btns">
+                            <a href="#work" class="btn btn-primary">View My Work</a>
+                            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                        </div>
+                        <div class="hero-socials">
+                            <a href="https://github.com/Asadbeksaidov-ux" target="_blank" title="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/asadbek-saidov-20414b358" target="_blank" title="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1-2 2 2 2 0 0 1 2-2z"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            <div class="hero-bg">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+            </div>
+        </section>
+
+        <!-- About / Skills Section -->
+        <section id="about" class="about">
+            <div class="container grid">
+                <div class="about-text">
+                    <h2 class="section-title">Who I Am</h2>
+                    <p>With years of experience in the programming field, I've mastered the art of turning complex
+                        problems into elegant solutions. My approach combines technical excellence with a keen eye for
+                        user experience.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>2+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>10+</h3>
+                            <p>Projects Done</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i data-lucide="code-2"></i>
+                        <h4>Frontend</h4>
+                        <p>React, Next.js, HTML5, CSS3/Sass</p>
+                    </div>
+                    <div class="skill-card">
+                        <i data-lucide="database"></i>
+                        <h4>Backend</h4>
+                        <p>Node.js, PostgreSQL, MongoDB, Redis</p>
+                    </div>
+                    <div class="skill-card">
+                        <i data-lucide="layers"></i>
+                        <h4>UI/UX</h4>
+                        <p>Figma, Adobe XD, Framer Motion</p>
+                    </div>
+                    <div class="skill-card">
+                        <i data-lucide="cpu"></i>
+                        <h4>DevOps</h4>
+                        <p>Docker, AWS, CI/CD, Git</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="work" class="work">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Delivering Excellence Across <span class="gradient-text">Diverse Industries</span></h2>
+                    <p>Explore a selection of my real-world projects, each custom-built to solve specific client challenges and deliver measurable business results across various domains.</p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project placeholders - will naturally need images -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2340&auto=format&fit=crop"
+                                alt="Meros Khiva">
+                        </div>
+                        <div class="project-info">
+                            <span class="tag">Hospitality / Hotel Management</span>
+                            <span class="client-badge">Custom Built for Client</span>
+                            <h4>Meros Khiva</h4>
+                            <p>An elegant, bilingual platform for the Meros B&B guest house, featuring room bookings and
+                                cultural heritage storytelling.</p>
+                            <a href="https://meroskhiva.uz" target="_blank" class="project-link">Visit Website <i
+                                    data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2442&auto=format&fit=crop"
+                                alt="Meros Travel">
+                        </div>
+                        <div class="project-info">
+                            <span class="tag">Tourism / Logistics</span>
+                            <span class="client-badge">Custom Built for Client</span>
+                            <h4>Meros Travel</h4>
+                            <p>A comprehensive travel ecosytem for guided tours, desert expeditions, and private
+                                transfers across Uzbekistan.</p>
+                            <a href="https://merostravel.uz" target="_blank" class="project-link">Visit Website <i
+                                    data-lucide="arrow-up-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-box glass">
+                    <div class="contact-info">
+                        <h2>Let's build something <span class="gradient-text">extraordinary</span> together.</h2>
+                        <p>Have a project in mind? Reach out and let's start a conversation.</p>
+                        <div class="contact-links">
+                            <a href="mailto:saidovasadbekbrawle@gmail.com"><i data-lucide="mail"></i> saidovasadbekbrawle@gmail.com</a>
+                            <a href="https://github.com/Asadbeksaidov-ux" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> 
+                                github.com/Asadbeksaidov-ux
+                            </a>
+                            <a href="https://www.linkedin.com/in/asadbek-saidov-20414b358" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1-2 2 2 2 0 0 1 2-2z"></path></svg>
+                                linkedin.com/in/asadbek-saidov
+                            </a>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="user_name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="user_email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Saidov Asadbek. Built with passion & precision.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/Asadbeksaidov-ux" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                <a href="https://www.linkedin.com/in/asadbek-saidov-20414b358" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1-2 2 2 2 0 0 1 2-2z"></path></svg></a>
+                <a href="mailto:saidovasadbekbrawle@gmail.com"><i data-lucide="mail"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
